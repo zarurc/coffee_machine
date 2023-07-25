@@ -29,4 +29,14 @@ resources = {
     "milk": 200,
     "coffee": 100,
 }
+abort = False
+money = 0
 
+while not abort:
+    choice = input("What would yo like? (espresso/latte/cappuccino): ")
+    if choice == "report":
+        print(f"Water: {resources['water']}ml")
+        print(f"Milk: {resources['milk']}ml")
+        print(f"Coffee: {resources['coffee']}ml")
+        print(f"Money: ${money}")
+    
